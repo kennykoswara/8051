@@ -2,6 +2,8 @@
 
 This is the header for LCD 8-bit for 8051 microcontroller.
 
+Hardware that I use :
+
 Microcontroller   : AT89S51
 
 LCD				  : LMB162AFC
