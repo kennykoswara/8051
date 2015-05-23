@@ -42,4 +42,7 @@ void lcdDelay(int x);
 
 char lcdBusy();
 
+void lcdCreateChar(char mem, char row, unsigned char x);
+void lcdCustomChar(char mem);
+
 #endif // LCD_8BIT_51_H_

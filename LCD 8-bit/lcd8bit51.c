@@ -129,12 +129,15 @@ char lcdBusy(){
 	}
 }
 
-void lcdCustomChar(char location, unsigned char *ptr){
-      unsigned char i;
-      if(location<8){
-          lcdCommand(0x40+(location*8));
-          for(i=0;i<8;i++)
-             lcdData(ptr[i]);
-     }
- 
+void lcdCreateChar(char mem, char row, unsigned char x){
+	char pos;
+	pos = 0x40 + (mem * 8)
+	if(mem < 8){
+		lcdCommand(pos + row);
+		lcdData(char);
+	}
+}
+
+void lcdCustomChar(char mem){
+	lcdString(0x00 + mem);
 }
