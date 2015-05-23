@@ -1,4 +1,4 @@
-# 8051
+# 8051 Microcontroller
 
 This contains C51 files (+headers) (and maybe A51) for the projects that I made.
 
