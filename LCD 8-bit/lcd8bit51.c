@@ -131,8 +131,8 @@ char lcdBusy(){
 
 void lcdCreateChar(char mem, char row, unsigned char x){
 	char pos;
-	pos = 0x40 + (mem * 8)
 	if(mem < 8){
+		pos = 0x40 + (mem * 8)
 		lcdCommand(pos + row);
 		lcdData(char);
 	}
